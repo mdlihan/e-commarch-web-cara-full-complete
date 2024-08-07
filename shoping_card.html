@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font_awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- axios cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- css cdn -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Eommerce web</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZKvhVY8nICvy48FPYD27cR0Vbe3-zB7-fg&usqp=CAU"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div id="navbar">
+        <img src="imgs/logo.png" alt="no_img" />
+        <div id="navbar_items">
+          <ul>
+            <div id="xicon">
+               <i class="fa-solid fa-x fa-2x"></i>
+            </div>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a class="active" href="shoping_card.html"
+                ><i id="shoping_bag" class="fa-solid fa-bag-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div id="mobile">
+          <a href="shoping_card.html"
+            ><i id="shoping_bag" class="fa-solid fa-bag-shopping fa-2x"></i
+          ></a>
+          <i id="toggle_bars" class="fa-solid fa-bars fa-2x"></i>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- banner start -->
+      <div id="about-banner">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, WE LOVE TO HEAR FROM YOU!</p>
+      </div>
+      <!-- banner end -->
+     
+      <!-- cart start -->
+          <div id="cart">
+             <table id="shoping_table" width="100%">
+
+                <thead>
+                   <th>REMOVE</th>
+                   <th>IMAGE</th>
+                   <th>PRODUCT</th>
+                   <th>PRICE</th>
+                   <th>QUANTITY</th>
+                   <th>SUBTOTAL</th>
+                </thead>
+
+                <tbody id="t-body">
+                    <tr>
+                        <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                        <td><img height="70px" src="imgs/products/f1.jpg" alt="no-referrer"></td>
+                        <td>Cartoon Astronaut T-Shirt</td>
+                        <td>$118.19</td>
+                        <td><input type="number" name="number" value="1" id="shoping_number"></td>
+                        <td>$118.19</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                        <td><img height="70px" src="imgs/products/f2.jpg" alt="no-referrer"></td>
+                        <td>Cartoon Astronaut T-Shirt</td>
+                        <td>$118.19</td>
+                        <td><input type="number" name="number" value="1" id="shoping_number"></td>
+                        <td>$118.19</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></td>
+                        <td><img height="70px" src="imgs/products/f3.jpg" alt="no-referrer"></td>
+                        <td>Cartoon Astronaut T-Shirt</td>
+                        <td>$118.19</td>
+                        <td><input type="number" name="number" value="1" id="shoping_number"></td>
+                        <td>$118.19</td>
+                    </tr>
+                </tbody>
+
+             </table>
+          </div>
+      <!-- cart end -->
+    
+      <!-- apply coopon start -->
+          <div class="apply-coupon-body">
+
+               <div class="apply-coupon">
+                  <h3>Apply Coupon</h3>
+
+                     <input type="text" name="text" id="text" class="coupon-box">
+                     <button type="submit">Apply</button>
+
+               </div>
+               <div class="card-total">
+                <h3>Cart Total</h3>
+                   <table>
+                       <tbody>
+                         <tr>
+                            <td>Cart Subtotal</td>
+                            <td>$335</td>
+                         </tr>
+                         <tr>
+                            <td>Shipping</td>
+                            <td>Free</td>
+                         </tr>
+                         <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>$335</strong></td>
+                         </tr>
+                       </tbody>
+                   </table>
+                   <button type="submit">Proceed to checkout</button>
+               </div>
+
+          </div>
+      <!-- apply coopon end -->
+
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+      <div id="footer">
+        <!-- contact start -->
+        <div>
+          <div>
+            <img id="logo_img" src="imgs/logo.png" alt="no-referrer" />
+            <h4>Contact</h4>
+            <address>
+              <span>Address :</span> 512 Saver,Saturia,Manikgonj <br />
+              <span>Phone :</span> +8801686671025 <br />
+              <span>Hours :</span> 10:00 18:00 mon sat <br /><br />
+              <span>Follow Us</span>
+              <br />
+            </address>
+          </div>
+
+          <!-- logo start -->
+          <div>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091637775054"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#"><i class="fa-solid fa-comment"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <!-- logo end -->
+        </div>
+        <!-- contact end -->
+
+        <!-- about start -->
+        <div>
+          <h4>About</h4>
+          <a href="#"><p>About Us</p></a>
+          <a href="#"><p>Delivery Information</p></a>
+          <a href="#"><p>Privacy Policy</p></a>
+          <a href="#"><p>Terms & Conditions</p></a>
+          <a href="#"><p>Contact Us</p></a>
+        </div>
+        <!-- about end -->
+
+        <!-- my account start -->
+        <div>
+          <h4>My Account</h4>
+          <a href="#"><p>Sing in</p></a>
+          <a href="#"><p>View Cart</p></a>
+          <a href="#"><p>My Wishlist</p></a>
+          <a href="#"><p>Track My Order</p></a>
+          <a href="#"><p>Help</p></a>
+        </div>
+        <!-- my account end -->
+
+        <!-- install app start -->
+        <div class="install_app">
+          <h4>Install App</h4>
+          <p><a href="#">From App Store or Google Play</a></p>
+          <!-- install app img -->
+          <div id="install_app">
+            <a href="https://www.apple.com/app-store/" target="_blank"
+              ><img src="imgs/pay/app.jpg" alt="no-referrer"
+            /></a>
+            <a href="play.google.com/store/apps?hl=en_US&gl=US" target="_blank"
+              ><img src="imgs/pay/play.jpg" alt="no-referrer"
+            /></a>
+          </div>
+          <!-- install app img -->
+          <p><a href="#">Secured Payment Goteways</a></p>
+          <img id="footer_last_img" src="imgs/pay/pay.png" alt="" />
+        </div>
+        <!-- install app end -->
+      </div>
+      <p id="copy-right">&copy; 2024 Tech etc-HTML CSS Ecommerce Template</p>
+    </footer>
+    <!-- footer end -->
+  </body>
+  <!-- js cdn -->
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font_awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- axios cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- css cdn -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Eommerce web</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZKvhVY8nICvy48FPYD27cR0Vbe3-zB7-fg&usqp=CAU"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div id="navbar">
+        <img src="imgs/logo.png" alt="no_img" />
+        <div id="navbar_items">
+          <ul>
+            <div id="xicon">
+              <i class="fa-solid fa-x fa-2x"></i>
+            </div>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="shoping_card.html"><i id="shoping_bag" class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div id="mobile">
+          <a href="shoping_card.html"><i id="shoping_bag" class="fa-solid fa-bag-shopping fa-2x"></i></a>
+          <i id="toggle_bars" class="fa-solid fa-bars fa-2x"></i>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- banner start -->
+      <div id="about-banner">
+        <h2>#KnowUS</h2>
+        <p>Lorem ipusm dolor sit amet, consectetur</p>
+      </div>
+      <!-- banner end -->
+
+      <!-- about header start -->
+      <div class="about-head">
+        <img
+         class="about-img"
+          src="imgs/about/a6.jpg"
+          alt="no-referrer"
+        />
+
+        <div>
+          <h1>Who We Are ?</h1>
+          <p>
+            Lorem ipsum dolor sit amet,consectetur adipisicing elit.sed do
+            eiusmod tempar incididunt ut lavore et dolot magna aliaua. Ut enim
+            ad minim venim, quis nastorud exercitation ullamce laboris nisi ut
+            aliquio ex ea commondo consequat. Dusi auteirure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nullo
+            pariatur. Excepteur sint accaecat non prodient. sunt in culpa qui
+            officia deserunt mollianim id est lavorum.
+          </p>
+          <u
+            >Create stunning images width as much ot as little control as you
+            lilke thanks to a choice og Basic and Creative modes</u
+          >
+          <br /><br />
+          <div>
+            <marquee loop="-1" scrollamount="5" id="marquee">Create stunning images width as much ot as little control as you
+              lilke thanks to a choice og Basic and Creative modes</marquee
+            >
+          </div>
+        </div>
+      </div>
+      <!-- about header end -->
+
+      <!-- dowonlod start -->
+      <h2 class="dowonlod-heder">Download Our <span>App</span></h2>
+        <div class="video">
+          <video src="imgs/about/1.mp4" muted loop autoplay></video>
+        </div>
+      <!-- dowonlod end -->
+       <!-- feature start -->
+       <div id="feature">
+        <div class="feature_card">
+          <img src="imgs/features/f1.png" alt="no-referrer" />
+          <h6>Free Shiping</h6>
+        </div>
+        <div class="feature_card">
+          <img src="imgs/features/f2.png" alt="no-referrer" />
+          <h6>Online Oreder</h6>
+        </div>
+        <div class="feature_card">
+          <img src="imgs/features/f3.png" alt="no-referrer" />
+          <h6>Save Money</h6>
+        </div>
+        <div class="feature_card">
+          <img src="imgs/features/f4.png" alt="no-referrer" />
+          <h6>Promoton</h6>
+        </div>
+        <div class="feature_card">
+          <img src="imgs/features/f5.png" alt="no-referrer" />
+          <h6>Happy sell</h6>
+        </div>
+        <div class="feature_card">
+          <img src="imgs/features/f6.png" alt="no-referrer" />
+          <h6>F24/7 Support</h6>
+        </div>
+      </div>
+      <!-- feature end -->
+
+       <!-- sign start -->
+       <div class="newsletterst">
+        <div>
+          <h2>Sign Up For Newsletters</h2>
+          <h5>Get E-mail updates about our latest shop and</h5>
+            <h5 id="span-5">special offers.</h5>
+        </div>
+        <div>
+          <form id="form1">
+            <input type="email" name="email" id="email" placeholder="please your E-mail">
+            <input type="button" value="Sign Up" id="input_btn">
+          </form>
+        </div>
+      </div>
+    <!-- sign end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+      <div id="footer">
+        <!-- contact start -->
+        <div>
+          <div>
+            <img id="logo_img" src="imgs/logo.png" alt="no-referrer" />
+            <h4>Contact</h4>
+            <address>
+              <span>Address :</span> 512 Saver,Saturia,Manikgonj <br />
+              <span>Phone :</span> +8801686671025 <br />
+              <span>Hours :</span> 10:00 18:00 mon sat <br /><br />
+              <span>Follow Us</span>
+              <br />
+            </address>
+          </div>
+
+          <!-- logo start -->
+          <div>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091637775054"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#"><i class="fa-solid fa-comment"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <!-- logo end -->
+        </div>
+        <!-- contact end -->
+
+        <!-- about start -->
+        <div>
+          <h4>About</h4>
+          <a href="#"><p>About Us</p></a>
+          <a href="#"><p>Delivery Information</p></a>
+          <a href="#"><p>Privacy Policy</p></a>
+          <a href="#"><p>Terms & Conditions</p></a>
+          <a href="#"><p>Contact Us</p></a>
+        </div>
+        <!-- about end -->
+
+        <!-- my account start -->
+        <div>
+          <h4>My Account</h4>
+          <a href="#"><p>Sing in</p></a>
+          <a href="#"><p>View Cart</p></a>
+          <a href="#"><p>My Wishlist</p></a>
+          <a href="#"><p>Track My Order</p></a>
+          <a href="#"><p>Help</p></a>
+        </div>
+        <!-- my account end -->
+
+        <!-- install app start -->
+        <div class="install_app">
+          <h4>Install App</h4>
+          <p><a href="#">From App Store or Google Play</a></p>
+          <!-- install app img -->
+          <div id="install_app">
+            <a href="https://www.apple.com/app-store/" target="_blank"
+              ><img src="imgs/pay/app.jpg" alt="no-referrer"
+            /></a>
+            <a href="play.google.com/store/apps?hl=en_US&gl=US" target="_blank"
+              ><img src="imgs/pay/play.jpg" alt="no-referrer"
+            /></a>
+          </div>
+          <!-- install app img -->
+          <p><a href="#">Secured Payment Goteways</a></p>
+          <img id="footer_last_img" src="imgs/pay/pay.png" alt="" />
+        </div>
+        <!-- install app end -->
+      </div>
+      <p id="copy-right">&copy; 2024 Tech etc-HTML CSS Ecommerce Template</p>
+    </footer>
+    <!-- footer end -->
+  </body>
+  <!-- js cdn -->
+  <script src="script.js"></script>
+</html>

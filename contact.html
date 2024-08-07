@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font_awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- axios cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- css cdn -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Eommerce web</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ZKvhVY8nICvy48FPYD27cR0Vbe3-zB7-fg&usqp=CAU"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <div id="navbar">
+        <img src="imgs/logo.png" alt="no_img" />
+        <div id="navbar_items">
+          <ul>
+            <div id="xicon">
+              <i class="fa-solid fa-x fa-2x"></i>
+            </div>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li>
+              <a href="shoping_card.html"
+                ><i id="shoping_bag" class="fa-solid fa-bag-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div id="mobile">
+          <a href="#"
+            ><i id="shoping_bag" class="fa-solid fa-bag-shopping fa-2x"></i
+          ></a>
+          <i id="toggle_bars" class="fa-solid fa-bars fa-2x"></i>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- banner start -->
+      <div id="about-banner">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, WE LOVE TO HEAR FROM YOU!</p>
+      </div>
+      <!-- banner end -->
+
+      <!-- contact detels section start -->
+      <div id="contact_detels">
+        <div id="detels">
+          <p class="get_touch">GET IN TOUCH</p>
+
+          <h2>Visit one of our agency locations or contact us today</h2>
+
+          <h4 class="head-office">Head Office</h4>
+
+          <ul class="head_contact">
+            <li>
+              <i class="fa-regular fa-map"></i>
+              <p>56 Galassford Street Glasgow GLLUL New York</p>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <p>contact@example.com</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <p>contact @example.com</p>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday to Satarday: 9.00am to 16.pm</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.9389175165206!2d89.9509587757832!3d23.997933979227383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe03204f73dd47%3A0x4ac4589018bf0edd!2sSavar%20Bazar%20fish%20market!5e0!3m2!1sbn!2sbd!4v1720849850309!5m2!1sbn!2sbd"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <!-- contact detels section start -->
+
+      <!-- contact us form start -->
+      <div id="contact_us">
+        <div class="contact_form">
+          <p class="get_touch">LEAVE A MESSAGE</p>
+          <h2>We love to hear form you</h2>
+
+          <form action="" class="form">
+            <input
+              type="email"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              required
+              name="textarea"
+              id="textarea"
+              rows="10"
+              placeholder="your message"
+            ></textarea>
+          </form>
+          <button type="button" id="form_btn">Submit</button>
+        </div>
+
+        <div class="contact_user">
+          <div class="all_contact_user">
+            <div class="user">
+              <img src="imgs/people/1.png" alt="no-referrer" />
+              <div class="detels">
+                <h4>John Doe</h4>
+                <p>Senear Marketing Manager</p>
+                <p>Phone: +0001230007788</p>
+                <p>Email : contact@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="user">
+              <img src="imgs/people/2.png" alt="no-referrer" />
+              <div class="detels">
+                <h4>William Smith</h4>
+                <p>Senear Marketing Manager</p>
+                <p>Phone: +0001230007788</p>
+                <p>Email : contact@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="user">
+              <img src="imgs/people/3.png" alt="no-referrer" />
+              <div class="detels">
+                <h4>Emma Stane</h4>
+                <p>Senear Marketing Manager</p>
+                <p>Phone: +0001230007788</p>
+                <p>Email : contact@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact us form end -->
+
+      <!-- sign start -->
+      <div class="newsletterst">
+        <div>
+          <h2>Sign Up For Newsletters</h2>
+          <h5>Get E-mail updates about our latest shop and</h5>
+          <h5 id="span-5">special offers.</h5>
+        </div>
+        <div>
+          <form id="form1">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="please your E-mail"
+            />
+            <input type="button" value="Sign Up" id="input_btn" />
+          </form>
+        </div>
+      </div>
+      <!-- sign end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+      <div id="footer">
+        <!-- contact start -->
+        <div>
+          <div>
+            <img id="logo_img" src="imgs/logo.png" alt="no-referrer" />
+            <h4>Contact</h4>
+            <address>
+              <span>Address :</span> 512 Saver,Saturia,Manikgonj <br />
+              <span>Phone :</span> +8801686671025 <br />
+              <span>Hours :</span> 10:00 18:00 mon sat <br /><br />
+              <span>Follow Us</span>
+              <br />
+            </address>
+          </div>
+
+          <!-- logo start -->
+          <div>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091637775054"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#"><i class="fa-solid fa-comment"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <!-- logo end -->
+        </div>
+        <!-- contact end -->
+
+        <!-- about start -->
+        <div>
+          <h4>About</h4>
+          <a href="#"><p>About Us</p></a>
+          <a href="#"><p>Delivery Information</p></a>
+          <a href="#"><p>Privacy Policy</p></a>
+          <a href="#"><p>Terms & Conditions</p></a>
+          <a href="#"><p>Contact Us</p></a>
+        </div>
+        <!-- about end -->
+
+        <!-- my account start -->
+        <div>
+          <h4>My Account</h4>
+          <a href="#"><p>Sing in</p></a>
+          <a href="#"><p>View Cart</p></a>
+          <a href="#"><p>My Wishlist</p></a>
+          <a href="#"><p>Track My Order</p></a>
+          <a href="#"><p>Help</p></a>
+        </div>
+        <!-- my account end -->
+
+        <!-- install app start -->
+        <div class="install_app">
+          <h4>Install App</h4>
+          <p><a href="#">From App Store or Google Play</a></p>
+          <!-- install app img -->
+          <div id="install_app">
+            <a href="https://www.apple.com/app-store/" target="_blank"
+              ><img src="imgs/pay/app.jpg" alt="no-referrer"
+            /></a>
+            <a href="play.google.com/store/apps?hl=en_US&gl=US" target="_blank"
+              ><img src="imgs/pay/play.jpg" alt="no-referrer"
+            /></a>
+          </div>
+          <!-- install app img -->
+          <p><a href="#">Secured Payment Goteways</a></p>
+          <img id="footer_last_img" src="imgs/pay/pay.png" alt="" />
+        </div>
+        <!-- install app end -->
+      </div>
+      <p id="copy-right">&copy; 2024 Tech etc-HTML CSS Ecommerce Template</p>
+    </footer>
+    <!-- footer end -->
+  </body>
+  <!-- js cdn -->
+  <script src="script.js"></script>
+</html>
